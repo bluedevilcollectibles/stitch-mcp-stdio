@@ -1,0 +1,36 @@
+{
+  "name": "stitch-mcp-stdio",
+  "version": "1.0.0",
+  "description": "Stable stdio MCP server for Google Stitch AI UI design tool. Drop-in replacement for @_davideast/stitch-mcp that doesn't crash.",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "stitch-mcp-stdio": "server.js"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mcp",
+    "stitch",
+    "google-stitch",
+    "ai-design",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "gemini"
+  ],
+  "author": "Blue Devil Collectibles",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bluedevilcollectibles/stitch-mcp-stdio.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@google/stitch-sdk": "^0.1.0",
+    "@modelcontextprotocol/sdk": "^1.23.0"
+  }
+}
