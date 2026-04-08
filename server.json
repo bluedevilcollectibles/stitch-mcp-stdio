@@ -1,0 +1,74 @@
+{
+  "$schema": "https://registry.modelcontextprotocol.io/schemas/server.json",
+  "name": "stitch-mcp-stdio",
+  "display_name": "Google Stitch (Stable stdio)",
+  "description": "Stable stdio MCP server for Google Stitch AI UI design tool. Drop-in replacement for @_davideast/stitch-mcp that eliminates the proxy crash on Windows. Uses @google/stitch-sdk's StitchProxy class with a stdio transport instead of spawning a proxy subprocess.",
+  "repository": {
+    "url": "https://github.com/bluedevilcollectibles/stitch-mcp-stdio",
+    "source": "github"
+  },
+  "version_detail": {
+    "version": "1.0.0",
+    "release_date": "2026-04-04"
+  },
+  "packages": [
+    {
+      "registry_name": "npm",
+      "name": "stitch-mcp-stdio",
+      "version": "1.0.0"
+    }
+  ],
+  "remotes": [],
+  "tools": [
+    {
+      "name": "create_project",
+      "description": "Create a new Stitch design project"
+    },
+    {
+      "name": "list_projects",
+      "description": "List all Stitch projects"
+    },
+    {
+      "name": "get_project",
+      "description": "Get project details"
+    },
+    {
+      "name": "generate_screen_from_text",
+      "description": "Generate a UI screen from a text prompt"
+    },
+    {
+      "name": "edit_screens",
+      "description": "Edit existing screens"
+    },
+    {
+      "name": "list_screens",
+      "description": "List screens in a project"
+    },
+    {
+      "name": "get_screen",
+      "description": "Get screen details and code"
+    },
+    {
+      "name": "generate_variants",
+      "description": "Generate design variants"
+    },
+    {
+      "name": "create_design_system",
+      "description": "Create a design system"
+    },
+    {
+      "name": "list_design_systems",
+      "description": "List design systems"
+    },
+    {
+      "name": "update_design_system",
+      "description": "Update a design system"
+    },
+    {
+      "name": "apply_design_system",
+      "description": "Apply a design system to screens"
+    }
+  ],
+  "categories": ["design", "ai", "ui"],
+  "tags": ["google", "stitch", "ui-design", "gemini", "prototyping", "figma-alternative"]
+}

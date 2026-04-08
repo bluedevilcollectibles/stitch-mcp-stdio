@@ -22,9 +22,10 @@ cd stitch-mcp-stdio
 npm install
 ```
 
-Or use npx (once published):
+**One-liner (no clone needed):**
 ```bash
-npx stitch-mcp-stdio
+# Clone to a local path and install deps
+git clone https://github.com/bluedevilcollectibles/stitch-mcp-stdio.git && cd stitch-mcp-stdio && npm install
 ```
 
 ### 3. Configure your MCP client
