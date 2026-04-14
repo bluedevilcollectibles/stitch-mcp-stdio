@@ -97,6 +97,12 @@ stitch.googleapis.com/mcp
 
 No proxy subprocess. No libuv handle management. Just stdio in, API calls out.
 
+## Built by
+
+[Blue Devil Collectibles](https://bluedevilcollectibles.com) -- makers of [LiveSeller Pro](https://livesellerpro.app), inventory and live selling tools for comic shops, card shops, and collectibles dealers.
+
+We built this MCP server to power our AI design pipeline. If you sell on WhatNot, manage pull lists, or run a brick-and-mortar shop, check out what we're building.
+
 ## License
 
 MIT

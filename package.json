@@ -20,8 +20,9 @@
     "cursor",
     "gemini"
   ],
-  "author": "Blue Devil Collectibles",
+  "author": "Blue Devil Collectibles (https://bluedevilcollectibles.com)",
   "license": "MIT",
+  "homepage": "https://livesellerpro.app",
   "repository": {
     "type": "git",
     "url": "https://github.com/bluedevilcollectibles/stitch-mcp-stdio.git"
