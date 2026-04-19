@@ -14,7 +14,27 @@ The official `@_davideast/stitch-mcp` package runs a proxy subprocess that suffe
 
 Go to [stitch.withgoogle.com](https://stitch.withgoogle.com) -> Profile -> Settings -> API Key.
 
-### 2. Install
+### 2. Configure your MCP client
+
+Point any MCP-compatible client (Claude Code, Claude Desktop, Cursor, Gemini CLI, VS Code) at `npx stitch-mcp-stdio`:
+
+```json
+{
+  "mcpServers": {
+    "stitch": {
+      "command": "npx",
+      "args": ["-y", "stitch-mcp-stdio"],
+      "env": {
+        "STITCH_API_KEY": "your-api-key"
+      }
+    }
+  }
+}
+```
+
+`npx -y` downloads + runs the latest version without a permanent install. To pin a version use `stitch-mcp-stdio@1.0.0`.
+
+### Alternative: local clone (if you'd rather not use npx)
 
 ```bash
 git clone https://github.com/bluedevilcollectibles/stitch-mcp-stdio.git
@@ -22,45 +42,7 @@ cd stitch-mcp-stdio
 npm install
 ```
 
-**One-liner (no clone needed):**
-```bash
-# Clone to a local path and install deps
-git clone https://github.com/bluedevilcollectibles/stitch-mcp-stdio.git && cd stitch-mcp-stdio && npm install
-```
-
-### 3. Configure your MCP client
-
-**Claude Code** (`.mcp.json`):
-```json
-{
-  "mcpServers": {
-    "stitch": {
-      "command": "node",
-      "args": ["/path/to/stitch-mcp-stdio/server.js"],
-      "env": {
-        "STITCH_API_KEY": "your-api-key"
-      }
-    }
-  }
-}
-```
-
-**Claude Desktop** (`claude_desktop_config.json`):
-```json
-{
-  "mcpServers": {
-    "stitch": {
-      "command": "node",
-      "args": ["/path/to/stitch-mcp-stdio/server.js"],
-      "env": {
-        "STITCH_API_KEY": "your-api-key"
-      }
-    }
-  }
-}
-```
-
-**Cursor**, **Gemini CLI**, **VS Code**, or any MCP-compatible client -- same pattern. Point to `server.js` and set the env var.
+Then point the client at `node /path/to/stitch-mcp-stdio/server.js` instead of `npx`.
 
 ## Available tools
 

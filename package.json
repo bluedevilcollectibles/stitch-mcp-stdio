@@ -10,6 +10,12 @@
   "scripts": {
     "start": "node server.js"
   },
+  "files": [
+    "server.js",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "mcp",
     "stitch",
